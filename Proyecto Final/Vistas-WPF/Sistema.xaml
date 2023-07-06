@@ -17,7 +17,7 @@
         <Button Content="Agregar" HorizontalAlignment="Left" Height="25" Margin="42,276,0,0" VerticalAlignment="Top" Width="84" Background="#FF3AFAFF"/>
         <DataGrid x:Name = "UserTable" AutoGenerateColumns = "False" CanUserAddRows = "False" IsReadOnly = "True" ColumnWidth= "*" IsSynchronizedWithCurrentItem="True" Margin="175,96,44,98">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="PkUser" Binding="{Binding PkUser}"/>
+                <DataGridTextColumn Header="Id" Binding="{Binding PkUser}"/>
                 <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"/>
                 <DataGridTextColumn Header="UserName" Binding="{Binding UserName}"/>
                 <DataGridTextColumn Header="Password" Binding="{Binding Password}"/>
