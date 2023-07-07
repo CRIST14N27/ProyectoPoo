@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Proyecto_Final.Entities;
+using Proyecto_Final.services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,15 @@ namespace Proyecto_Final.Vistas_WPF
         public Sistema()
         {
             InitializeComponent();
+        }
+        UsuarioServices services = new UsuarioServices();
+        private void btnAgregar_Click(object sender, RoutedEventArgs e)
+        {
+            Usuario usuario = new Usuario();
+            usuario.Nombre = txtNombre.Text;
+            usuario.UserName = txtUsuario.Text;
+            usuario.Password = txtPassword.Text;
+                 
         }
     }
 }
